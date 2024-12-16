@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+    .next-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      background-color: #28A745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+
+  </style>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+  <h1 style="text-align: center; color: #333;">Quiz</h1>
+  <div style="max-width: 600px; margin: 0 auto;">
+
+    <!-- Question 1 -->
+    <div id="q1" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">1. What is the time complexity of searching for an element in a balanced binary search tree (BST)?</p>
+      <label><input type="radio" name="q1" value="a"> A. O(n)</label><br>
+      <label><input type="radio" name="q1" value="b"> B. O(log n)</label><br>
+      <label><input type="radio" name="q1" value="c"> C. O(n log n)</label><br>
+      <label><input type="radio" name="q1" value="d"> D. O(1)</label>
+    </div>
+
+    <!-- Question 2 -->
+    <div id='q2' class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">2. Which of the following sorting algorithms has the best worst-case time complexity?</p>
+      <label><input type="radio" name="q2" value="a"> A. Quick Sort</label><br>
+      <label><input type="radio" name="q2" value="b"> B. Merge Sort</label><br>
+      <label><input type="radio" name="q2" value="c"> C. Insertion Sort</label><br>
+      <label><input type="radio" name="q2" value="d"> D. Bubble Sort</label>
+    </div>
+
+    <!-- Question 3 -->
+    <div id="q3" class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">3. In a hash table, what happens when two keys hash to the same index?</p>
+      <label><input type="radio" name="q3" value="a"> A. The keys are stored in the same position.</label><br>
+      <label><input type="radio" name="q3" value="b"> B. The keys are discarded.</label><br>
+      <label><input type="radio" name="q3" value="c"> C. A collision resolution mechanism is used, such as chaining or open addressing.</label><br>
+      <label><input type="radio" name="q3" value="d"> D. The table is resized.</label>
+    </div>
+
+    <!-- Question 4 -->
+    <div id="q4" class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">4. Which of the following data structures is best suited for implementing a priority queue?</p>
+      <label><input type="radio" name="q4" value="a"> A. Array</label><br>
+      <label><input type="radio" name="q4" value="b"> B. Linked List</label><br>
+      <label><input type="radio" name="q4" value="c"> C. Binary Heap</label><br>
+      <label><input type="radio" name="q4" value="d"> D. Stack</label>
+    </div>
+
+    <!-- Question 5 -->
+    <div id="q5" class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">5. What is the time complexity of the depth-first search (DFS) algorithm in an undirected graph with V vertices and E edges?</p>
+      <label><input type="radio" name="q5" value="a"> A. O(V + E)</label><br>
+      <label><input type="radio" name="q5" value="b"> B. O(V * E)</label><br>
+      <label><input type="radio" name="q5" value="c"> C. O(V * V)</label><br>
+      <label><input type="radio" name="q5" value="d"> D. O(E)</label>
+    </div>
+
+    <!-- Question 6 -->
+    <div id="q6" class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">6. What is the main advantage of using a Trie over a hash map for storing strings?</p>
+      <label><input type="radio" name="q6" value="a"> A. Tries have better space complexity.</label><br>
+      <label><input type="radio" name="q6" value="b"> B. Tries allow for efficient prefix-based searches.</label><br>
+      <label><input type="radio" name="q6" value="c"> C. Tries provide faster insertion times.</label><br>
+      <label><input type="radio" name="q6" value="d"> D. Tries are faster for finding the maximum element.</label>
+    </div>
+
+    <!-- Question 7 -->
+    <div id="q7" class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">7. What is the worst-case time complexity of the bubble sort algorithm?</p>
+      <label><input type="radio" name="q7" value="a"> A. O(n log n)</label><br>
+      <label><input type="radio" name="q7" value="b"> B. O(n)</label><br>
+      <label><input type="radio" name="q7" value="c"> C. O(n<sup>2</sup>)</label><br>
+      <label><input type="radio" name="q7" value="d"> D. O(log n)</label>
+    </div>
+
+    <!-- Question 8 -->
+    <div id="q8" class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">8. What type of traversal is used to get the nodes of a binary tree in increasing order?</p>
+      <label><input type="radio" name="q8" value="a"> A. Preorder</label><br>
+      <label><input type="radio" name="q8" value="b"> B. Postorder</label><br>
+      <label><input type="radio" name="q8" value="c"> C. Inorder</label><br>
+      <label><input type="radio" name="q8" value="d"> D. Level-order</label>
+    </div>
+
+    <!-- Question 9 -->
+    <div id="q9" class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">9. Which of the following algorithms can be used to find the shortest path in a graph with non-negative edge weights?</p>
+      <label><input type="radio" name="q9" value="a"> A. Dijkstra's Algorithm</label><br>
+      <label><input type="radio" name="q9" value="b"> B. Bellman-Ford Algorithm</label><br>
+      <label><input type="radio" name="q9" value="c"> C. Floyd-Warshall Algorithm</label><br>
+      <label><input type="radio" name="q9" value="d"> D. A* Algorithm</label>
+    </div>
+
+    <!-- Question 10 -->
+    <div id="q10" class="hidden" style="margin-bottom: 20px;">
+      <p style="font-size: 18px; font-weight: bold;">10. Which of the following data structures is used for implementing the Undo functionality in text editors?</p>
+      <label><input type="radio" name="q10" value="a"> A. Stack</label><br>
+      <label><input type="radio" name="q10" value="b"> B. Queue</label><br>
+      <label><input type="radio" name="q10" value="c"> C. Linked List</label><br>
+      <label><input type="radio" name="q10" value="d"> D. Binary Search Tree</label>
+    </div>
+
+<button class="hidden" id="submit-btn" style="width: 100%; padding: 10px; font-size: 18px; background-color: #007BFF; color: white; border: none; cursor: pointer;">
+  Submit
+</button>
+
+    <!-- Next Question Button -->
+    <button class="next-btn">
+      Next Question
+    </button>
+  </div>
+  <table class="hidden">
+    <thead>
+      <tr>
+        <th>Question</th>
+        <th>Correct Answer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1. What is the time complexity of searching for an element in a balanced binary search tree (BST)?</td>
+        <td>B. O(log n)</td>
+      </tr>
+      <tr>
+        <td>2. Which of the following sorting algorithms has the best worst-case time complexity?</td>
+        <td>B. Merge Sort</td>
+      </tr>
+      <tr>
+        <td>3. In a hash table, what happens when two keys hash to the same index?</td>
+        <td>C. A collision resolution mechanism is used, such as chaining or open addressing.</td>
+      </tr>
+      <tr>
+        <td>4. Which of the following data structures is best suited for implementing a priority queue?</td>
+        <td>C. Binary Heap</td>
+      </tr>
+      <tr>
+        <td>5. What is the time complexity of the depth-first search (DFS) algorithm in an undirected graph?</td>
+        <td>A. O(V + E)</td>
+      </tr>
+      <tr>
+        <td>6. What is the main advantage of using a Trie over a hash map for storing strings?</td>
+        <td>B. Tries allow for efficient prefix-based searches.</td>
+      </tr>
+      <tr>
+        <td>7. What is the worst-case time complexity of the bubble sort algorithm?</td>
+        <td>C. O(n²)</td>
+      </tr>
+      <tr>
+        <td>8. What type of traversal is used to get the nodes of a binary tree in increasing order?</td>
+        <td>C. Inorder</td>
+      </tr>
+      <tr>
+        <td>9. Which of the following algorithms can be used to find the shortest path in a graph with non-negative edge weights?</td>
+        <td>A. Dijkstra's Algorithm</td>
+      </tr>
+      <tr>
+        <td>10. Which of the following data structures is used for implementing the Undo functionality in text editors?</td>
+        <td>A. Stack</td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="/ProjectsinJS/Quiz_App/index.js"></script>
+</body>
+</html>
